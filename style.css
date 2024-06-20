@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 25%;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+  padding: 1.6rem;
+}
+.img-container {
+  position: relative;
+  width: 100%;
+}
+img {
+  width: 100%;
+  border-radius: 0.8rem;
+  padding-bottom: 0.4rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 97%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  border-radius: 0.8rem;
+}
+.img-container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+.icon-image {
+  width: 17%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+h1:hover,
+.author:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.5rem;
+}
+
+.eth-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.ethlabel,
+.daysleft-container {
+  display: flex;
+  width: 50%;
+  gap: 8px;
+}
+
+.eth {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+}
+
+.daysleft-container {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.daysleft {
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 10px;
+  color: hsl(215, 51%, 70%);
+}
+
+footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+div.author,
+span {
+  padding-bottom: 4px;
+}
+
+span {
+  color: hsl(215, 51%, 70%);
+}
+span:hover {
+  color: hsl(215, 51%, 70%);
+}
+
+#avatar-image {
+  height: 34px;
+  width: 34px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 34px;
+}
+
+.author {
+  color: hsl(0, 0%, 100%);
+}
+
+/*  --------MOBILE--------- */
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
+  }
+
+  .card {
+    width: 88%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  div.author,
+  span {
+    font-size: 15px;
+  }
+  footer {
+    margin-top: -14px;
+  }
+}

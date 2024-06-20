@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="img-container">
+        <img src="./images/image-equilibrium.jpg" alt="hero" />
+
+        <div class="overlay">
+          <img
+            src="./images/icon-view.svg"
+            alt="icon-image"
+            class="icon-image"
+          />
+        </div>
+      </div>
+      <h1>Equilibrium #3429</h1>
+
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="eth-container">
+        <div class="ethlabel">
+          <div>
+            <img src="./images/icon-ethereum.svg" alt="icon-ethereum" />
+          </div>
+          <div class="eth">0.041 ETH</div>
+        </div>
+
+        <div class="daysleft-container">
+          <div><img src="./images/icon-clock.svg" alt="clock" /></div>
+          <div class="daysleft">3 days left</div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="avatar">
+          <img id="avatar-image" src="./images/image-avatar.png" alt="avatar" />
+        </div>
+        <div class="author"><span> Creation of </span>&nbsp Jules Wyvern</div>
+      </footer>
+    </div>
+  </body>
+</html>
